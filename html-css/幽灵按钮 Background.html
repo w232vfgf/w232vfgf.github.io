@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="https://cdn.bootcss.com/hover.css/2.3.1/css/hover.css" rel="stylesheet">
+	</head>
+	<body>
+		<span class="s1">sss</span>
+		<span class="s2">sss</span>
+		<span class="s3">sss</span>
+		<style type="text/css">
+			span{
+				background-color:#D3D3D3 ;
+				padding: 15px 60px;
+				margin-right:10px ;
+				position: relative;
+				z-index: 1;
+				display: inline-block;
+				overflow: hidden;
+			}
+			.s1:after{
+				content: '';
+				width: 0%;
+				height: 100%;
+				display: block;
+				top: 0;
+			    bottom: 0;
+			    right: 0;
+				position: absolute;
+				z-index: -1;
+				background-color: royalblue;
+				transition: all 0.5s;
+			}
+			.s1:hover.s1:after{
+				width: 50%;
+			}
+			.s1:before{
+				content: '';
+				width: 0%;
+				height: 100%;
+				display: block;
+				top: 0;
+			    bottom: 0;
+			    left: 0;
+				position: absolute;
+				z-index: -1;
+				background-color: royalblue;
+				transition: all 0.5s;
+			}
+			.s1:hover.s1:before{
+				width: 50%;
+			}
+			.s2:after{
+				content: '';
+				width: 100%;
+				height: 100%;
+				display: block;
+				top: 0;
+			    bottom: 0;
+			    right: 0;
+			    left: 0;
+				position: absolute;
+				z-index: -1;
+				transform: rotateY(90deg);
+				background-color: royalblue;
+				transition: all 1s;				
+			}
+			.s2:hover.s2:after{
+				transform: rotateY(0deg);
+			}
+			.s3:after{
+				content: '';
+				width: 50%;
+				height: 50%;
+				display: block;
+				top: 0;
+			    bottom: 0;
+			    right: 0;
+			    left: 0;
+			    margin: auto auto;
+				position: absolute;
+				z-index: -1;
+				transform: scaleX(0);
+				background-color: royalblue;
+				transition: all 1s;				
+			}
+			.s3:hover.s3:after{
+				width: 100%;
+				height: 100%;
+				transform: scaleX(2);
+			}
+		</style>
+	</body>
+</html>

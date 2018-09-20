@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<span class="">第一</span>
+		<span class="">第二</span>
+		<span class="">第三</span>
+		<div class="">
+			<img src="img/1.jpg"/>
+		</div>
+		<div class="">
+			<img src="img/2.jpg"/>
+		</div>
+		<div class="">
+			<img src="img/3.jpg"/>
+		</div>
+		<style type="text/css">
+			span {
+				width: 100px;
+				display: inline-block;
+				text-align: center;
+				line-height: 32px;
+				background: lightblue;
+			}
+			span.s{
+				background: lightgray;
+			}
+			div{
+				position: absolute;
+				top: 50px;
+				left: 10px;
+				display: none;
+			}	
+			div.d{
+				display: block;
+			}
+			img{
+				width: 308px;
+			}		
+		</style>
+		<!--<script type="text/javascript">
+			var span=document.getElementsByTagName("span");
+			var div=document.getElementsByTagName("div");
+			for (var i=0;i<span.length;i++) {
+				span[i].index=i;
+			}
+			var fff=function  () {
+				for (var t=0; t<div.length;t++) {
+					div[t].style.display="none";
+				}
+			}
+			var sss=function  () {
+				for (var t=0; t<div.length;t++) {
+					span[t].style.background="lightblue"
+				}
+			}			
+			fff();
+			for (var h=0;h<span.length;h++) {
+				span[h].onclick=function(){
+					fff();				
+					div[this.index].style.display="block";
+					sss();
+					span[this.index].style.background="lightgray";
+					
+				}
+			}
+		</script>-->
+		
+<!--		//通过增加和删除clss来改变-->
+		<script type="text/javascript">
+			var span=document.querySelectorAll("span");
+			var div=document.querySelectorAll("div");
+			//查找某元素的兄弟元素的函数
+			var siblings=function(s) {
+				var nodes=[];
+				var allNodes=s.parentNode.children;
+				for (var i = 0; i < allNodes.length; i++) {
+					if (allNodes[i]!==s) {
+						nodes.push(allNodes[i]);
+					}
+				}
+				return nodes;
+			};
+			// 某个元素增加某个class的函数
+//	传2个参数	element 元素的位置, className class属性 
+            var addClass;
+            addClass = function (element, className) {
+//				定义一个变量来接收
+                var oldClass = element.className;
+//				定义一个变量来把oldClass字符串变为字符数组
+                var classArray = oldClass.split(' ');
+//				进行判定,该class属性是否存在,存在则不执行
+                if (classArray.indexOf(className) === -1) {
+                    classArray.push(className);
+                }
+//				把改变后的classArray这个字符数组转变为字符串
+                element.className = classArray.join(' ').trim();
+            };
+			// 某个元素删除某个class的函数
+			var removeClass=function  (element, className) {
+				var oldClass = element.className;
+				var classArray=oldClass.split(' ');
+//				进行判定,该class属性是否存在,存在则执行
+		        if (classArray.indexOf(className) !== -1) {
+//		        	删除元素,｛classArray.indexOf(className)｝元素的位置,只删除一个
+            		classArray.splice(classArray.indexOf(className), 1);
+        		}
+		        element.className = classArray.join(' ').trim();
+			};
+			
+			
+			for (var h=0;h<span.length;h++) {
+				span[h].index=h;
+				span[h].onclick=function  () {
+					addClass(this,'s');
+					var otherspan= siblings(this);
+					for (var i = 0; i < otherspan.length; i++) {						
+						removeClass(otherspan[i], 's');
+					}
+					addClass(div[this.index],'d');
+					var otherdiv= siblings(div[this.index]);
+					for (var j= 0; j< otherdiv.length; j++) {						
+						removeClass(otherdiv[j], 'd');
+					}					
+				}
+				
+			}
+		</script>
+	</body>
+
+</html>

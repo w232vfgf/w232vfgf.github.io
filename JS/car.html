@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        var car=function (x,y,imgs,speed) {
+            this.x=x;
+            this.y=y;
+            this.imgs=imgs;
+            this.speed=speed;
+            this.draw=function () {
+                this.imgNode=document.createElement('img');
+                this.imgNode.src=this.imgs;
+                this.imgNode.style.position="absolute";
+                this.imgNode.style.top=this.y + 'px';
+                this.imgNode.style.left=this.x + 'px';
+                document.body.appendChild(this.imgNode);
+            }
+        };
+        car.prototype.move = function () {
+        this.imgNode.style.left = parseInt(this.imgNode.style.left) + this.speed +'px';
+        };
+
+        var car1 = new car(0,0,'img/car1.png',10);
+        car1.draw();
+        var car2 = new car(0,100,'img/car2.png',5);
+        car2.draw();
+
+        setInterval(function () {
+            car1.move();
+            car2.move();
+        },300);
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<div class="r">
+</div>
+<style type="text/css">
+    body {
+        height: 400px;
+        width: 400px;
+        border: black 2px solid;
+        background: lightblue;
+    }
+
+    div {
+        height: 10px;
+        width: 10px;
+        background: red;
+        position: relative;
+        border-radius:50%;
+        top: 0;
+        left: 0;
+    }
+</style>
+<script type="text/javascript">
+    var dong = document.getElementsByClassName("r")[0];
+    var dongStyle = dong.currentStyle ? dong.currentStyle : window.getComputedStyle(dong, null);
+    var positionX = parseInt(dongStyle.left);
+    var positionY = parseInt(dongStyle.top);
+
+    var speed = 5;
+    var direction = 'right';
+    var moveRight = function () {
+        positionX += speed;
+        dong.style.left = positionX + 'px';
+    };
+    var moveBottom = function () {
+        positionY += speed;
+        dong.style.top = positionY + 'px';
+    };
+    var moveLeft = function () {
+        positionX -= speed;
+        dong.style.left = positionX + 'px';
+    };
+    var moveTop = function () {
+        positionY -= speed;
+        dong.style.top = positionY + 'px';
+    };
+    var chome=function () {
+        if (positionX <= 0) {
+            direction = 'right';
+        } else if (positionX >= 400-10) {
+            direction = 'Left';
+        } else if (positionY <= 0) {
+            direction = 'Bottom';
+        } else if (positionY >= 400-10) {
+            direction = 'Top';
+        }
+    };
+    document.body.onkeydown = function (ev) {
+    switch (ev.keyCode){
+        case 37:
+            direction = 'Left';
+            break;
+        case 38:
+            direction = 'Top';
+            break;
+        case 39:
+            direction = 'right';
+            break;
+        case 40:
+            direction = 'Bottom';
+            break;
+        default:
+            return;
+    }};
+    var id = setInterval(function () {
+        chome();
+        if (direction === 'right') {
+            moveRight();
+        } else if (direction === 'Left') {
+            moveLeft();
+        } else if (direction === 'Bottom') {
+            moveBottom();
+        } else if (direction === 'Top') {
+            moveTop();
+        }
+    },50);
+</script>
+</body>
+
+</html>

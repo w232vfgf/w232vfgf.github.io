@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="s">sss</div>
+		<style type="text/css">
+			/*.s{	
+				padding: 15px 30px;
+				display: inline-block;
+				background-color: lightgray;
+			}
+			.s:hover{
+				 box-shadow: inset 0 0 0 4px #2098D1;
+				box-shadow: h-shadow v-shadow blur spread color inset;
+h-shadow：阴影水平偏移的距离，大于0表示向右偏移，小于0表示向左偏移，等于0等于没有水平偏移。该参数为必需参数。
+v-shadow：阴影垂直偏移的距离，大于0表示向下偏移，小于0表示向上偏移，等于0表示没有垂直偏移。该参数为必需参数。
+blur：阴影的模糊距离，该参数为可选参数。
+spread：阴影的尺寸，该参数为可选参数。0px代表阴影和当前的实体一样大，大于0则表示大于实体的尺寸。
+color：阴影的颜色，该参数为可选参数。参数的形式有：black(英文)、#000000(16进制)、RGB:(0,0,0)(10进制)等。
+inset：将外部阴影 (outset) 改为内部阴影。该参数为可选参数。
+			}
+			.s{	
+				padding: 15px 30px;
+				display: inline-block;
+				background-color: lightgray;
+			}
+			.s:hover{
+				 box-shadow: inset 0 0 0 5px lightgray;
+				 background-color: white; 
+			}*/
+			/*.s{	
+				padding: 15px 30px;
+				display: inline-block;
+				background-color: lightgray;
+				position: relative;
+			}
+			.s:before{
+				content: '';
+				position: absolute;
+				top: 4px;
+				left: 4px;
+				right: 4px;
+				bottom: 4px;
+				border: 4px solid blue;
+				opacity: 0;
+			}
+			.s:hover:before{
+				 opacity: 1;		 
+			}*/
+			/*.s{	
+				padding: 15px 30px;
+				display: inline-block;
+				background-color: #e1e1e1;
+				position: relative;
+			}
+			.s:before{
+				content: '';
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				border: 4px solid  #e1e1e1;
+			}
+			.s:hover:before{
+				animation: s 1s linear;		 
+			}
+			@keyframes s{
+			100%{
+				top: -8px;
+				left: -8px;
+				right: -8px;
+				bottom: -8px;	
+				opacity: 0;			
+			}
+			}*/
+			.s{	
+				padding: 15px 30px;
+				display: inline-block;
+				background-color: #e1e1e1;
+				position: relative;
+				  overflow: hidden;
+			}
+			.s:before{
+				  content: "";
+				  position: absolute;
+				  left: 0;
+				  right: 0;
+				  top: 0;
+				  bottom: 0;
+				  border-color: #2098D1;
+				  border-style: solid;
+				  border-width: 0;
+				  transition: all .5s; 
+			}
+			.s:hover:before{
+  				border-width: 4px; 
+			}
+			
+		</style>
+	</body>
+</html>

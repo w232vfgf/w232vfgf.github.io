@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="zy/css/bootstrap.css">
+    <link rel="stylesheet" href="zy/css/main.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container nav" role="navigation">
+            <span class="glyphicon glyphicon-menu-hamburger pull-left " onclick="xl()"></span>
+            <ul class="breadcrumb pull-left">
+                <li><a href="main.html" class="active">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-left pull-right" role="search">
+                <div class="form-group">
+                    <!-- onblur 事件会在对象失去焦点时发生。Onblur 经常用于Javascript验证代码，一般用于表单输入框。
+onfocus 事件在对象获得焦点时发生。Onfocus 通常用于 <input>, <select>, 和<a>. -->
+                    <input type="text" class="form-control" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}">
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span> </div>
+            </form>
+        </div>
+        <div class="container bt"><span>cultivation</span></div>
+        <div class="container grids">
+            <div class="row">
+                <div class="col-xs-3 zou">
+                    <div class="thumbnail">
+                        <img src="zy/img/icon4.png" class="img-circle img-thumbnail ">
+                        <div class="caption">
+                            <h3>Dolor nunc vule</h3>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 shang">
+                    <div class="thumbnail">
+                        <img src="zy/img/icon5.png" class="img-circle img-thumbnail ">
+                        <div class="caption">
+                            <h3>Dolor nunc vule</h3>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 xia">
+                    <div class="thumbnail">
+                        <img src="zy/img/icon6.png" class="img-circle img-thumbnail ">
+                        <div class="caption">
+                            <h3>Dolor nunc vule</h3>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 you">
+                    <div class="thumbnail">
+                        <img src="zy/img/icon7.png" class="img-circle img-thumbnail">
+                        <div class="caption">
+                            <h3>Dolor nunc vule</h3>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <h3>About Us</h3>
+            <div class="row">
+                <div class="about-grids">
+                    <div class="about-img  col-xs-5 zou">
+                        <img src="./zy/img/img1.jpg" alt="" class="img-responsive ">
+                    </div>
+                    <div class="xs col-xs-7 you">
+                        <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus pretium sit amet. Praesent lectus tortor, tincidu nt in consectetur vestibulum, ultrices nec neque. Praesent nec sagittis
+                            mauris. Fusce convallis nunc neque. Integer egestas aliquam interdum. Nulla ante diam, interdum nec tempus eu, feugiat vel erat.Cras consequat iaculis lorem, id vehicula erat mattis quis.Cras consequat iaculis lorem, id vehicula
+                            erat mattis. Integer egestas aliquam interdum. Nulla ante diam,</p>
+                        <p>lorem,Cras consequat iaculis id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus pretium sit amet. Praesent lectus tortor, tincidu nt in consectetur vestibulum, ultrices nec neque. Praesent nec sagittis
+                            mauris. Fusce convallis nunc neque. Integer egestas aliquam interdum. Nulla ante diam, interdum nec tempus eu, feugiat vel erat.Cras consequat iaculis lorem, id vehicula erat mattis quis.Cras consequat iaculis lorem, id vehicula
+                            erat mattis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service-section">
+        <div class="container">
+            <h3>Our Services</h3>
+            <div class="service-grids row">
+                <div class="col-sm-6 col-md-4 zou">
+                    <div class="thumbnail">
+                        <img src="./zy/img/icon1.png" alt="..." class="img-thumbnail">
+                        <div class="caption">
+                            <h4>Dolor nunc vule putateulr</h4>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.Praesent nec sagittis mauris. Fusce convallis nunc neque.Integer egestas.Vivamus laoreet velit justo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 xia">
+                    <div class="thumbnail">
+                        <img src="./zy/img/icon2.png" alt="..." class="img-thumbnail">
+                        <div class="caption">
+                            <h4>Dolor nunc vule putateulr</h4>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.Praesent nec sagittis mauris. Fusce convallis nunc neque.Integer egestas.Vivamus laoreet velit justo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 you jz">
+                    <div class="thumbnail">
+                        <img src="./zy/img/icon3.png" alt="..." class="img-thumbnail">
+                        <div class="caption">
+                            <h4>Dolor nunc vule putateulr</h4>
+                            <p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.Praesent nec sagittis mauris. Fusce convallis nunc neque.Integer egestas.Vivamus laoreet velit justo</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="Works">
+        <div class="container">
+            <h3>Our Latest Works</h3>
+            <div class="latest-grids">
+                <div class="grids row">
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img2.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img3.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img4.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img5.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="grids1 row">
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img6.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img7.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img8.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-xs-3 grids-img">
+                        <img src="zy/img/img9.jpg" alt="" class="img-thumbnail tp">
+                        <div class="tx">
+                            <img src="zy/img/magnify.png" alt="" class=" img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-section">
+        <div class="container">
+            <h3>Latest News</h3>
+            <div class="news-grids row">
+                <div class="col-xs-4 zou">
+                    <div class="thumbnail">
+                        <img src="zy/img/img10.jpg" alt="...">
+                        <div class="caption">
+                            <h4>Dolor nunc vule putateulr</h4>
+                            <p class="date">March 23rd, 2015 <a href="#">5 Comments</a></p>
+                            <p>Praesent vestim molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                            <button class="btn btn-lg "><span>Read More</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 xia">
+                    <div class="thumbnail">
+                        <img src="zy/img/img11.jpg" alt="...">
+                        <div class="caption">
+                            <h4>Dolor nunc vule putateulr</h4>
+                            <p class="date">March 23rd, 2015 <a href="#">5 Comments</a></p>
+                            <p>Praesent vestim molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                            <button class="btn btn-lg "><span>Read More</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 you">
+                    <div class="thumbnail">
+                        <img src="zy/img/img12.jpg" alt="...">
+                        <div class="caption">
+                            <h4>Dolor nunc vule putateulr</h4>
+                            <p class="date">March 23rd, 2015 <a href="#">5 Comments</a></p>
+                            <p>Praesent vestim molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                            <button class="btn btn-lg "><span>Read More</span> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 zou">
+                    <h3>Upcome Events</h3>
+                    <dl>
+                        <dt><img src="zy/img/im1.jpg" alt="" class="col-xs-5"></dt>
+                        <dd class="pull-left"><a href="#">sagittis magna</a></dd>
+                        <dd class="col-xs-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="zy/img/im2.jpg" alt="" class="col-xs-5"></dt>
+                        <dd class="pull-left"><a href="#">Integer molest</a></dd>
+                        <dd class="col-xs-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="zy/img/im3.jpg" alt="" class="col-xs-5"></dt>
+                        <dd class="pull-left"><a href="#">Fusce suscipit</a></dd>
+                        <dd class="col-xs-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-xs-4 xia">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Praesent vestim molestie lacus.</li>
+                        <li>Cras consequat iaculis lorem</li>
+                        <li>Consectetur adipiscing iaculis</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Cum sociis natoque penatibus et magnis</li>
+                        <li>Integer molestie lorem</li>
+                        <li>lorem,Cras consequat iaculis id vehicula</li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 con you">
+                    <h3>Contact</h3>
+                    <dl>
+                        <dt style="width: 40px;
+    height: 40px;display: inline-block; background: url(zy/img/img-sprite1.png) no-repeat -220px 0px;" class="col-xs-5"></dt>
+                        <dd class="col-xs-6">
+                            <p>1-000-000-0000</p>
+                            <p>1-000-000-0000</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="width: 40px;
+                        height: 40px;display: inline-block; background: url(zy/img/img-sprite1.png) no-repeat -260px 0px;" class="col-xs-5"></dt>
+                        <dd class="col-xs-6">
+                            <p>Seventh Avenue</p>
+                            <p> Chelsea, Manhattan</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="width: 40px;
+                        height: 40px;display: inline-block; background: url(zy/img/img-sprite1.png) no-repeat -300px 0px;" class="col-xs-5"></dt>
+                        <dd class="col-xs-3"><a href="mailto:example@mail.com">bcdefg@hijs.dfh</a>
+                            <a href="mailto:example@mail.com">fjashfaf@jkfs.ckd</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-top zou">
+                <a href=""><i class="icon1"></i></a>
+                <a href=""><i class="icon2"></i></a>
+                <a href=""><i class="icon3"></i></a>
+                <a href=""><i class="icon4"></i></a>
+            </div>
+            <div class="bottom-menu">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">products</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom you">
+                <p>Copyright &copy; 2015.Company name All rights reserved.More Templates - Collect from </p>
+            </div>
+        </div>
+    </div>
+    <div class="go-top" onclick="GoTop()">
+        <a></a>
+    </div>
+    <script src="zy/js/main.js"></script>
+</body>
+
+</html>

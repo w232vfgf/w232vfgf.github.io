@@ -1,0 +1,50 @@
+.bigbox {
+  height: 460px;
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.bigbox .box {
+  height: 460px;
+  width: 4800px;
+}
+.bigbox .box img {
+  float: left;
+  height: 460px;
+  width: 1200px;
+}
+.bigbox .qh .zuo,
+.bigbox .qh .you {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 50px;
+  color: rgba(0, 0, 255, 0.4);
+  font-size: 42px;
+}
+.bigbox .qh .zuo {
+  left: 0;
+}
+.bigbox .qh .you {
+  right: 0;
+}
+.bigbox .dian {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  text-align: center;
+}
+.bigbox .dian i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 255, 0.3);
+  margin: 0 20px;
+}
+/*# sourceMappingURL=lbt03.css.map */

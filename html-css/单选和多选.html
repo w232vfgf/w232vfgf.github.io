@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<label class="l">
+		  <input type="radio" name="r">
+		  <div class="slider">男</div>
+		</label>
+		<label class="l">
+		  <input type="radio" name="r">
+		  <div class="slider">女</div>
+		</label>
+		<hr />
+		<label class="l">
+		  <input type="checkbox">
+		  <div class="slider">前端工程师</div>
+		</label>
+		<label class="l">
+		  <input type="checkbox">
+		  <div class="slider">视觉设计师</div>
+		</label>
+		<label class="l">
+		  <input type="checkbox">
+		  <div class="slider">UI交互设计师</div>
+		</label>
+		<style type="text/css">
+			.l{
+				display: inline-block;
+			}
+			.l input{
+				display: none;
+			}
+			.slider{
+				line-height: 32px;
+				background-color: #EAEAEA;
+				border-radius: 5px;
+				padding: 0 20px 0 10px;
+			}
+			.slider:before{
+				content: '';
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				margin-top: -4px;
+				margin-right: 5px;
+				vertical-align: middle;
+				background: url(img/input-unchecked.png);
+			}
+			input:checked +.slider{
+				background-color: #6495ED;
+			}
+			input:checked +.slider:before{
+				background: url(img/input-checked.png);
+			}			
+		</style>
+	</body>
+</html>

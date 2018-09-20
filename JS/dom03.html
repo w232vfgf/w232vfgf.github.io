@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="r">
+    </div>
+    <style type="text/css">
+        #r {
+            height: 400px;
+            width: 400px;
+            border: black 2px solid;
+            background: lightblue;
+            position: relative;
+            margin: 0 auto;
+        }
+    </style>
+    <script type="text/javascript">
+        var box = document.querySelector('#r');
+        var boxClass = box.currentStyle ? box.currentStyle : window.getComputedStyle(box, null);
+        var stageSizeX = parseInt(boxClass.width);
+        var stageSizeY = parseInt(boxClass.height);
+
+        var qiu = function (width, height, speed, x, y) {
+            this.sizeX = width;
+            this.sizeY = height;
+            this.speedX = speed;
+            this.speedY = speed;
+            this.x = x;
+            this.y = y;
+            this.currentX = this.x;
+            this.currentY = this.y;
+            this.draw = function () {
+                this.imgNode = document.createElement('div');
+                this.imgNode.style.position = "absolute";
+                this.imgNode.style.width = this.sizeX + "px";
+                this.imgNode.style.height = this.sizeX + "px";
+                this.imgNode.style.borderRadius = "50%";
+                this.imgNode.style.background = "red";
+                this.imgNode.style.top = this.x + 'px';
+                this.imgNode.style.left = this.y + 'px';
+                box.appendChild(this.imgNode);
+            }
+        }
+           qiu.prototype.move = function () {
+               this.currentX += this.speedX;
+               this.currentY += this.speedY;
+               this.imgNode.style.left = this.currentX + 'px';
+               this.imgNode.style.top = this.currentY + 'px';
+               if (this.currentX <= 0 || this.currentX >= stageSizeX - 20) {
+                   this.speedX = -this.speedX;
+               } else if (this.currentY <= 0 || this.currentY >= stageSizeY - 20) {
+                   this.speedY = -this.speedY;
+               }
+           }
+qiu.prototype.move1 = function () {
+this.currentX += this.speedX;
+this.currentY += this.speedY;
+this.imgNode.style.left = this.currentX + 'px';
+this.imgNode.style.top = this.currentY + 'px';
+if (this.currentX <= 0 || this.currentX>= stageSizeX - 20) {
+    this.speedX = -this.speedX;
+    } else if (this.currentY <= 0 || this.currentY>= stageSizeY - 20) {
+        this.speedY = -this.speedY;
+        }
+            document.body.onkeydown = function (ev) {
+                switch (ev.keyCode) {
+                    case 37:
+                        this.currentX -= this.speedX;
+                        
+                        break;
+                    case 38:
+                        this.currentY -= this.speedY;
+                     
+                        break;
+                    case 39:
+                        this.currentX += this.speedX;
+                      
+                        break;
+                    case 40:
+                        this.currentY += this.speedY;
+                
+                        break;
+                    default:
+                        return;
+                }
+            };
+        }
+        var a = new qiu(20, 20, 5, 45, 67);
+        a.draw();
+        var b = new qiu(20, 20, 5, 300, 0);
+        b.draw();
+        setInterval(function () {
+            a.move1();
+               b.move();
+        }, 50);
+    </script>
+</body>
+
+</html>

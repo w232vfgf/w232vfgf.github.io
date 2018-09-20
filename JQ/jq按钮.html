@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="a">
+        <span class="af"></span>
+        <span class="b">
+            666666
+        </span>
+    </div>
+    <style>
+        #a {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            margin: 0 auto;
+            background: yellow;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .b {
+            position: relative;
+            color: black;
+            z-index: 88;
+            line-height: 100px;
+        }
+
+        .af {
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            /* margin-left: 0px;
+            margin-top: 0px;
+            pointer-events: none; */
+            transform: scale(0);
+            transition: transform .5s;
+            /* pointer-events属性值详解
+auto——效果和没有定义pointer-events属性相同，鼠标不会穿透当前层。在SVG中，该值和visiblePainted的效果相同。
+none——元素不再是鼠标事件的目标，鼠标不再监听当前层而去监听下面的层中的元素。但是如果它的子元素设置了pointer-events为其它值，比如auto，鼠标还是会监听这个子元素的。 */
+        }
+
+        .active {
+            transform: scale(10);
+        }
+
+        /* .dd {
+             //forwards 当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。 
+        animation: dd 0.5s forwards;
+
+        }
+
+        .cc {
+            animation: cc 0.5s forwards;
+        }
+
+        @keyframes dd {
+            0% {
+                width: 0px;
+                height: 0px;
+                margin-left: 0px;
+                margin-top: 0px;
+                background-color: rgba(42, 53, 80, 0.2);
+            }
+
+            100% {
+                width: 500px;
+                height: 500px;
+                margin-left: -250px;
+                margin-top: -250px;
+                background-color: rgba(20, 180, 87, 0.8);
+            }
+        }
+
+        @keyframes cc {
+            0% {
+                width: 500px;
+                height: 500px;
+                margin-left: -250px;
+                margin-top: -250px;
+                background-color: rgba(20, 180, 87, 0.8);
+            }
+
+            100% {
+                width: 0px;
+                height: 0px;
+                margin-left: 0px;
+                margin-top: 0px;
+                background-color: rgba(129, 80, 108, 0.6);
+            }
+        }
+
+        */
+    </style>
+    <script>
+        var box = $("#a");
+        var af = $(".af");
+        // box.hover(function (e) { //鼠标移进
+        //     // offset() 方法设置或返回被选元素相对于文档的偏移坐标。
+        //     var parentOffset = $(this).offset();
+        //     // pageX() 属性是鼠标指针的位置，相对于文档的左边缘。
+        //     // pageY() 属性是鼠标指针的位置，相对于文档的上边缘。
+        //     var relX = e.pageX - parentOffset.left;
+        //     var relY = e.pageY - parentOffset.top;
+        //     af.css({
+        //         "left": relX,
+        //         "top": relY
+        //     });
+        //     af.removeClass("cc");
+        //     af.addClass("dd");
+        // }, function (e) { //鼠标移出
+        //     var parentOffset = $(this).offset();
+        //     var relX = e.pageX - parentOffset.left;
+        //     var relY = e.pageY - parentOffset.top;
+        //     af.css({
+        //         "left": relX,
+        //         "top": relY
+        //     });
+        //     af.removeClass("dd");
+        //     af.addClass("cc");
+        // });
+
+        box.hover(function (e) { //鼠标移进
+                var parentOffset = $(this).offset();
+                var relX = e.pageX - parentOffset.left;
+                var relY = e.pageY - parentOffset.top;
+                af.css({
+                    "left": relX,
+                    "top": relY
+                });
+                af.addClass('active');
+            },
+            function (e) { //鼠标移出
+                af.removeClass('active');
+            }
+
+        )
+    </script>
+</body>
+
+</html>

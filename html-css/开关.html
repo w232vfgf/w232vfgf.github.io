@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<label class="l">
+		  <input type="checkbox">
+		  <div class="slider"></div>
+		</label>
+		<br /><br />
+		<label class="l">
+		  <input type="checkbox">
+		  <div class="slider r"></div>
+		</label>
+		
+		<style type="text/css">
+			.l{
+				width: 60px;
+				height: 35px;
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+			}
+			.l input{
+				display: none;
+			}
+			.slider {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 60px;
+				height: 35px;
+				background-color:cornflowerblue ;	
+				transition: all .3s; 
+			}
+			.slider:before{
+				content: '';
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				top: 5px;
+				left: 5px;
+				background-color:white ;
+				transition: all .3s; 
+			}
+			input:checked+.slider{
+				background-color:lightgrey ;
+				transition: all .3s; 
+			}
+			input:checked+.slider:before {
+				transform: translateX(25px);
+				transition: all .3s; 
+			}
+			.r{
+				border-radius:25px ;
+			}
+			.r:before{
+				border-radius:50% ;
+			}
+		</style>
+	</body>
+</html>

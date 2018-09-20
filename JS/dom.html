@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<div class="r">
+
+</div>
+<style type="text/css">
+    body {
+        background: lightblue;
+    }
+
+    div {
+        height: 200px;
+        width: 200px;
+        background: red;
+    }
+</style>
+<script type="text/javascript">
+    var dong = document.getElementsByClassName("r")[0];
+    var on = true;
+    dong.onclick = function () {
+        if (on === true) {
+            q();
+            var xx = setInterval(function () {
+                q();
+            }, 33500);
+        }
+        on = false;
+    }
+
+    function q() {
+        var a = setInterval(function () {
+            leftdong();
+        }, 500);
+
+        var left = 0;
+        var leftdong = function () {
+            left += 50;
+            dong.style.marginTop = left + 'px';
+            if (left > 400) {
+                clearInterval(a);
+                ar();
+            }
+
+        }
+
+        function ar() {
+            a1 = setInterval(function () {
+                zuodong();
+            }, 500);
+        }
+
+        var z = 0;
+        var zuodong = function () {
+            z += 50;
+            dong.style.marginLeft = z + 'px';
+            if (z > 1130) {
+                clearInterval(a1);
+                at();
+            }
+        }
+
+        function at() {
+            a2 = setInterval(function () {
+                shangdong();
+            }, 500);
+        }
+
+        var j = 500;
+        var shangdong = function () {
+            j -= 50;
+            dong.style.marginTop = j + 'px';
+            if (j < 50) {
+                clearInterval(a2);
+                ay();
+            }
+        }
+
+        function ay() {
+            a3 = setInterval(function () {
+                youdong();
+            }, 500);
+        }
+
+        var y = 1200;
+        var youdong = function () {
+            y -= 50;
+            dong.style.marginLeft = y + 'px';
+            if (y < 50) {
+                clearInterval(a3);
+            }
+        }
+    }
+</script>
+</body>
+
+</html>

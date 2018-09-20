@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="f1">
+			<div class="f2"></div>
+			<img src="img/2.jpg"/>
+			<div class="f3">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+			</div>
+		</div>
+		<style type="text/css">
+			.f1{
+				height: 200px;
+				width: 200px;
+				position: relative;
+			}
+			.f2{
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border-bottom: 10px solid blue;
+				border-left: 10px solid blue;	
+				border-top: 10px solid lightsalmon;	
+				border-right: 10px solid lightsalmon;
+				transition: all 1s;
+			}
+			.f1 img{
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				height: 200px;
+				width: 200px;				
+				border-radius: 50%;
+				transition: all 1s;
+			}
+			.f1:hover .f2{
+				transform: rotate(180deg);
+			}
+			.f1:hover img{
+				filter: brightness(70%);
+			}
+			.f3{
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				color: white;
+				opacity: 0;
+				transition: all 1s;
+			}
+			.f1:hover .f3{
+				opacity: 1;
+			}
+		</style>
+		<br />
+		<br />
+		<hr />
+		<br />
+		<br />
+			<div class="a1">
+				<div class="a3"></div>
+				<div class="a2">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+				</div>				
+			</div>
+		
+		<style type="text/css">
+			.a1{
+				position: relative;
+			}
+			.a3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border: 10px solid lightgray;
+				transition: all 0.5s;
+				background: url(img/3.jpg);
+			}			
+			.a2{
+				position: absolute;
+				top: 0px;
+				left: 220px;
+				color: white;
+				height: 220px;
+				width: 220px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: rgba(41,41,41,.5);				
+				transition: all 0.5s;
+				opacity: 0;
+				visibility: hidden;	
+			}
+			.a2 h3{
+			     margin-top: 70px;
+			}
+			.a1:hover .a2{
+				left: 0px;
+				opacity: 1;
+				visibility: visible;
+			}
+			.a1:hover .a3{
+				transform: rotate(90deg);
+			}			
+		</style>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		<br />
+		<br />
+		<br />
+		<br />
+<hr />
+		<br />
+		<br />	
+			<div class="b1">
+				<div class="b3"></div>
+				<div class="b2">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+				</div>				
+			</div>
+		
+		<style type="text/css">
+			.b1{
+				margin-left: 100px;
+				position: relative;
+			}
+			.b3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border: 10px solid lightgray;
+				transition: all 0.5s;
+				background: url(img/3.jpg);
+			}			
+			.b2{
+				position: absolute;
+				top: 0px;
+				left: 220px;
+				color: white;
+				height: 220px;
+				width: 220px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: rgba(41,41,41,.5);				
+				transition: all 0.5s;
+				opacity: 0;
+				visibility: hidden;	
+			}
+			.b2 h3{
+			     margin-top: 70px;
+			}
+			.b1:hover .b2{
+				left: 0px;
+				opacity: 1;
+				visibility: visible;
+				z-index: -1;
+			}
+			.b1:hover .b3{
+				transform: scale(0.5);
+				z-index: 1;
+				left: -125px;
+			}			
+		</style>
+		
+			<div class="c1">
+				<div class="c3"></div>
+				<div class="c2">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+				</div>				
+			</div>
+		
+		<style type="text/css">
+			.c1{
+				margin-left: 400px;
+				position: relative;
+			}
+			.c3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border: 10px solid lightgray;
+				transition: all 0.5s;
+				background: url(img/3.jpg);
+			}			
+			.c2{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				color: white;
+				height: 220px;
+				width: 220px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: rgba(41,41,41,.5);				
+				transition: all 0.5s;
+				opacity: 0;
+				transform: scale(0.5);
+				visibility: hidden;	
+			}
+			.c2 h3{
+			     margin-top: 70px;
+			}
+			.c1:hover .c2{
+				transform: scale(1);
+				opacity: 1;
+				visibility: visible;
+			}
+			.c1:hover .c3{
+				transform: scale(1.5);
+				opacity: 0;
+				visibility: hidden;
+			}			
+		</style>
+		
+			<div class="g1">
+				<div class="g3"></div>
+				<div class="g2">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+				</div>				
+			</div>
+		
+		<style type="text/css">
+			.g1{
+				margin-left: 800px;
+				position: relative;
+			}
+			.g3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border: 10px solid lightgray;
+				transition: all 0.5s;
+				background: url(img/3.jpg);
+				transform-origin:bottom ;
+			}			
+			.g2{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				color: white;
+				height: 220px;
+				width: 220px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: rgba(41,41,41,.5);				
+				transition: all 0.5s;
+				opacity: 0;
+				transform-origin: top;
+				transform: rotateX(90deg);
+				visibility: hidden;	
+			}
+			.g2 h3{
+			     margin-top: 70px;
+			}
+			.g1:hover .g2{
+				transform: rotateX(0deg);
+				opacity: 1;
+				visibility: visible;
+			}
+			.g1:hover .g3{
+			transform: rotateX(90deg);
+				opacity: 0;
+				visibility: hidden;
+			}			
+		</style>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<div class="j1">
+				<div class="j3"></div>
+				<div class="j2">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+				</div>				
+			</div>
+		
+		<style type="text/css">
+			.j1{
+				position: relative;
+			}
+			.j3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border: 10px solid lightgray;
+				transition: all 0.5s;
+				background: url(img/3.jpg);
+			}			
+			.j2{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				color: white;
+				height: 220px;
+				width: 220px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: rgba(41,41,41,.5);				
+				transition: all 0.5s;
+				opacity: 0;
+				transform: scale(0.1) rotate(0deg);
+				visibility: hidden;	
+			}
+			.j2 h3{
+			     margin-top: 70px;
+			}
+			.j1:hover .j2{
+				transform: scale(1) rotate(720deg);
+				opacity: 1;
+				visibility: visible;
+			}
+			.j1:hover .j3{
+				transform: scale(0.1) rotate(720deg);
+				opacity: 0;
+				visibility: hidden;
+			}			
+		</style>
+		<script src="https://cdn.bootcss.com/prefixfree/1.0.7/prefixfree.min.js" ></script>
+	</body>
+</html>

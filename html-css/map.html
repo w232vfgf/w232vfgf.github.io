@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<table border="1" >  <!--表格边框宽1px-->
+			<tr>
+				<th colspan="4" align="left">ss</th>		<!--表格的表头-->	<!--colspan列合并-->
+			</tr>
+			<tr>
+				<td width="40px" height="20px" ></td>    <!--单元格-->
+				<td width="40px" height="20px" ></td>
+				<td width="40px" height="20px" ></td>
+				<td width="40px" height="20px" ></td>
+			</tr>
+			<tr>
+				<td width="40px" height="20px"  rowspan="2"></td>      <!--rowspan行合并-->
+				<td width="40px" height="20px"  ></td>
+				<td width="40px" height="20px"  ></td>
+				<td width="40px" height="20px"  ></td>
+			</tr>
+			<tr>
+				<td width="40px" height="20px"  ></td>
+				<td width="40px" height="20px"  rowspan="3"></td>
+				<td width="40px" height="20px"  ></td>
+				
+			</tr>
+			<tr>
+				<td width="40px" height="20px"   colspan="2"></td>
+				<td width="40px" height="20px"  ></td>
+				
+				
+			</tr>
+			<tr>
+				<td width="40px" height="20px"  ></td>
+				<td width="40px" height="20px"  ></td>
+				<td width="40px" height="20px"  ></td>
+			
+			</tr>
+		</table>
+	</body>
+<br />
+<br />
+<img src="img/map.jpg" usemap="#mymap" width="100px" height="100px"/>
+<map name="mymap">
+	<area shape="poly" coords="0,100,50,0,100,100" alt="red" href="http://www.baidu.com">
+</map>
+<!--<area> 标签定义图像映射内部的区域（图像映射指的是带有可点击区域的图像）。
+<area> 元素始终嵌套在 <map> 标签内部。-->
+<!--<map> 标签用于客户端图像映射。图像映射指带有可点击区域的一幅图像。
+<img>中的 usemap 属性可引用 <map> 中的 id 或 name 属性（取决于浏览器），所以我们应同时向 <map> 添加 id 和 name 属性。-->
+<!--shape 形状 ： poly 多边形  circle 圆形  rect 矩形      coords 坐标   x1y1 x2y2  alt：图片不存在时的文字提示  -->
+<br />
+<br />
+<form>
+	<input type="text" name="zhanghao" value="1123231" />
+	<input  type="button" value="提交"/>
+</form>
+
+
+</html>

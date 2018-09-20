@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button"  value="btnA Count0"/>
+
+    <input type="button" onclick="up()" value="btnB Count0"/>
+    <p id="dome"></p>
+    <script>
+        var add = function () {
+            if (arguments.length===1) {
+                return console.log(arguments[0]+100);
+            }else {
+                var i, sum = 0;
+                for (i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+        };
+
+        var x={
+            count:0,
+            add:function () {
+                return this.count+=1;
+            }
+        };
+
+        var dome = document.getElementById("dome");
+        var input = document.getElementsByTagName("input");
+        input[0].onclick=function () {
+            input[0].value="btnA Count "+x.add();
+            dome.innerHTML=x.add()-1;
+        };
+        var up=(function () {
+            var x=0;
+            return function () {
+                input[1].value="btnB Count " + ++x;
+
+            }
+        })();
+
+
+
+
+    </script>
+</body>
+</html>

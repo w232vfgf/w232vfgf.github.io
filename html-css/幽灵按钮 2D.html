@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h4>2D Transitions</h4>
+		<span class="Grow">Grow</span>
+		<span class="Shrink">Shrink</span>
+		<span class="Pulse">Pulse</span>
+		<span class="Pulse-Grow">Pulse Grow</span>
+		<span class="Pulse-Shrink">Pulse Shrink</span>
+		<span class="Push">Push</span>
+		<span class="Pop">Pop</span><br />
+		<span class="Bounce-In">Bounce In</span>
+		<span class="Bounce-Out">Bounce Out</span>
+		<span class="Rotate">Rotate</span>
+		<span class="Grow-Rotate">Grow Rotate</span>
+		<span class="Float">Float</span>
+		<span class="Sink">Sink</span>
+		<span class="Bob">Bob</span><br />
+		<span class="Skew">Skew</span>
+		<span class="Skew-Forward">Skew Forward</span>
+		<span class="Wobble-Horizontal">Wobble Horizontal</span>
+		<span class="Wobble-To-Bottom-Right">Wobble To Bottom Right</span>
+		<span class="Wobble-Top">Wobble Top</span>
+		<span class="Wobble-Skew">Wobble Skew</span>
+		<span class="Buzz">Buzz</span>
+		<style type="text/css">
+			span{
+				margin-left: 20px;
+				margin-bottom: 20px;
+				display: inline-block;
+				padding: 15px 25px;
+				background-color: #D3D3D3;
+			}
+			.Grow:hover{
+				transform: scale(1.2);
+			}
+			.Shrink:hover{
+				transform: scale(0.9);
+			}
+			.Pulse:hover{
+				animation: pulse 1s linear infinite;
+			}
+			@keyframes pulse{
+			0%{
+				transform: scale(1.2);
+			}
+			50%{
+				transform: scale(0.9);
+			}
+			100%{
+				transform: scale(1.2);
+			}
+			}
+			.Pulse-Grow:hover{
+				animation: pg 1s linear infinite;
+			}
+			@keyframes pg{
+			0%{
+				transform: scale(1.2);
+			}
+			50%{
+				transform: scale(1);
+			}
+			100%{
+				transform: scale(1.2);
+			}
+			}
+			.Pulse-Shrink:hover{
+				animation: ps 1s linear infinite;
+			}
+			@keyframes ps{
+			0%{
+				transform: scale(0.9);
+			}
+			50%{
+				transform: scale(1);
+			}
+			100%{
+				transform: scale(0.9);
+			}
+			}
+			.Push:hover{
+				animation: Push 0.2s linear;
+			}
+			@keyframes Push{
+			0%{
+				transform: scale(0.9);
+			}
+			100%{
+				transform: scale(1);
+			}
+			}
+			.Pop:hover{
+				animation: Pop 0.2s linear;
+			}
+			@keyframes Pop{
+			0%{
+				transform: scale(1.2);
+			}
+			100%{
+				transform: scale(1);
+			}
+			}
+			.Bounce-In:hover{
+				animation: in 0.5s linear;
+				transform: scale(1.2);
+			}
+			@keyframes in{
+			0%{
+				transform: scale(1.2);
+			}
+			50%{
+				transform: scale(1.1);
+			}
+			100%{
+				transform: scale(1.2);
+			}
+			}
+		    .Bounce-Out:hover{
+				animation: Out 0.5s linear;
+				transform: scale(0.8);
+			}
+			@keyframes Out{
+			0%{
+				transform: scale(0.8);
+			}
+			50%{
+				transform: scale(0.9);
+			}
+			100%{
+				transform: scale(0.8);
+			}
+			}
+		    .Rotate:hover{
+				transform:rotate(15deg);
+			}
+		    .Grow-Rotate:hover{
+				transform:rotate(15deg) scale(1.2);
+			}
+		    .Float:hover{
+				transform:translateY(-10px);
+			}
+		    .Sink:hover{
+				transform:translateY(10px);
+			}
+		    .Bob:hover{
+				transform:translateY(-10px);
+				animation: Bob 0.5s linear infinite;
+			}
+			@keyframes Bob{
+			0%{
+				transform:translateY(-10px);
+			}
+			50%{
+				transform:translateY(-8px);
+			}
+			100%{
+				transform:translateY(-10px);
+			}
+			}
+			.Skew:hover{
+				transform: skewY(-15deg);
+			}
+			.Skew-Forward:hover{
+				transform: skewX(-15deg);
+				transform-origin: bottom;
+			}
+			.Wobble-Horizontal:hover{
+				animation: Horizontal 1s linear;
+			}
+			@keyframes Horizontal{
+			0%{
+				transform:translateX(5px);
+			}
+			25%{
+				transform:translateX(-5px);
+			}
+			50%{
+				transform:translateX(3px);
+			}
+			75%{
+				transform:translateX(-3px);
+			}
+			100%{
+				transform:translateX(0px);
+			}
+			}
+			.Wobble-To-Bottom-Right:hover{
+				animation: Bottom-Right 0.5s linear;
+			}
+			@keyframes Bottom-Right{
+			0%{
+				transform:translate(8px, 8px);
+			}
+			25%{
+				transform:translate(-6px, -6px);
+			}
+			50%{
+				transform:translate(6px, 6px);
+			}
+			75%{
+				transform:translate(-4px, -4px);
+			}
+			100%{
+				transform:translate(0px);
+			}
+			}		
+			.Wobble-Top:hover{
+				animation: Top 0.5s linear;
+				transform-origin: bottom;
+			}
+			@keyframes Top{
+			0%{
+				transform: skewX(-15deg);
+			}
+			25%{
+				transform: skewX(15deg);
+			}
+			50%{
+				transform: skewX(-10deg);
+			}
+			75%{
+				transform: skewX(10deg);
+			}
+			100%{
+				transform: skewX(0deg);
+			}
+			}	
+			.Wobble-Skew:hover{
+				animation:ws 0.5s linear;
+			}
+			@keyframes ws{
+			0%{
+				transform: skew(15deg);
+			}
+			25%{
+				transform: skew(-15deg);
+			}
+			50%{
+				transform: skew(10deg);
+			}
+			75%{
+				transform: skew(-10deg);
+			}
+			100%{
+				transform: skew(0deg);
+			}
+			}
+			.Buzz:hover{
+				animation:Buzz 0.1s linear infinite;
+			}
+			@keyframes Buzz{
+			0%{
+				transform: translateX(2px) rotate(2deg);
+			}
+			100%{
+				transform: translateX(-2px) rotate(-2deg);
+			}
+			}							
+		</style>
+		<script src="https://cdn.bootcss.com/prefixfree/1.0.7/prefixfree.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

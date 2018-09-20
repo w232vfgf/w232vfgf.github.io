@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <span class="a">第一</span>
+    <span class="b">第二</span>
+    <span class="c">第三</span>
+    <div class="q">
+        <img src="img/1.jpg" />
+    </div>
+    <div class="w">
+        <img src="img/2.jpg" />
+    </div>
+    <div class="e">
+        <img src="img/3.jpg" />
+    </div>
+    <style type="text/css">
+        span {
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+            line-height: 32px;
+            background: lightblue;
+        }
+
+        span.s {
+            background: lightgray;
+        }
+
+        div {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            display: none;
+        }
+
+        div.d {
+            display: block;
+        }
+
+        img {
+            width: 308px;
+        }
+    </style>
+    <script>
+        // for (let i = 0; i < $("span").length; i++) {
+        //     $("span").eq(i).click(function () {
+        //         $("span").removeClass("s");
+        //         $("div").removeClass('d');
+        //         $("span").eq(i).toggleClass("s");
+        //         $("div").eq(i).toggleClass('d');
+        //     })
+        // }
+        // for (let i = 0; i < $("span").length; i++) {
+        //     $("span").eq(i).click(function () {
+        //         $("span").removeClass("s");
+        //         $("div").hide();
+        //         $("span").eq(i).toggleClass("s");
+        //         $("div").eq(i).toggle();
+        //     })
+        // }
+$("span").click(function(){
+$(this).addClass("s").siblings().removeClass('s');
+$("div").eq($(this).index()).addClass('d').siblings().removeClass('d');
+})
+    </script>
+</body>
+
+</html>

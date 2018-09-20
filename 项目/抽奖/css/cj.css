@@ -1,0 +1,23 @@
+.bj {
+  background: url(../img/turntable-bg.jpg) no-repeat;
+  border: 2px solid black;
+  width: 650px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.bj #cj {
+  position: absolute;
+  left: 261px;
+  top: 156px;
+  z-index: 5;
+  width: 174px;
+  height: 228px;
+}
+.bj .jp {
+  position: absolute;
+  top: 60px;
+  left: 117px;
+  width: 450px;
+  height: 450px;
+}

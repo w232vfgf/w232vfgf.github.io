@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="bigbox">
+			<div class="box">
+				<embed src="img/二维码.svg" type="image/svg+xml" style="width: 50px; height: 50px;"></embed>
+				<span class="s2"></span>
+				<span class="s3"></span>
+			</div>
+			<div class="box1">
+				<embed src="img/扫一扫.svg" type="image/svg+xml" style="width: 50px; height: 50px;"></embed>
+				<span class="s2"></span>
+				<span class="s3"></span>				
+			</div>
+			<div class="box2">
+				<embed src="img/完成.svg" type="image/svg+xml" style="width: 50px; height: 50px;"></embed>
+				<span class="s2"></span>
+				<span class="s3"></span>				
+			</div>
+		</div>
+		<style type="text/css">
+			.bigbox div{
+				margin-top: 50px;
+			}
+			div span{
+				margin-left: 50px;
+			}
+			@font-face {
+				font-family: 'bdfont';
+				src: url("bdfont.ttf");
+			}			
+			.box span.s2:before{
+				font-family: 'bdfont', "宋体", '微软雅黑';
+				content: '\e001';
+				font-size: 50px;
+				color: red;
+				vertical-align: top;
+			}
+			.box1 span.s2:before{
+				font-family: 'bdfont', "宋体", '微软雅黑';
+				content: '\e002';
+				font-size: 50px;
+				color: red;
+				vertical-align: top;
+			}	
+			.box2 span.s2:before{
+				font-family: 'bdfont', "宋体", '微软雅黑';
+				content: '\e003';
+				font-size: 50px;
+				color: red;
+				vertical-align: top;
+			}	
+			span.s3{
+				display: inline-block;
+				height: 50px;
+				width: 50px;
+				background: url(img/聚划算.png) no-repeat center center;
+			}
+			.box .s3{
+				background-position: 0px 0px;
+			}
+			.box1 .s3{
+				background-position: -52px 0px;
+			}	
+			.box2 .s3{
+				background-position: -100px 0px;
+			}			
+		</style>
+	</body>
+</html>
