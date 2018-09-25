@@ -22,10 +22,10 @@ https://w232vfgf.github.io/html-css/单选和多选.html
  https://w232vfgf.github.io/html-css/字体图片.html
 
   [幽灵按钮2D](https://w232vfgf.github.io/html-css/幽灵按钮2D.html) 
-https://w232vfgf.github.io/html-css/幽灵按钮 2D.html
+https://w232vfgf.github.io/html-css/幽灵按钮2D.html
 
-  [幽灵按钮Background](https://w232vfgf.github.io/html-css/幽灵按钮 Background.html) 
- https://w232vfgf.github.io/html-css/幽灵按钮 Background.html
+  [幽灵按钮Background](https://w232vfgf.github.io/html-css/幽灵按钮Background.html) 
+ https://w232vfgf.github.io/html-css/幽灵按钮Background.html
 
   [幽灵按钮Border](https://w232vfgf.github.io/html-css/幽灵按钮Border.html) 
 https://w232vfgf.github.io/html-css/幽灵按钮 Border.html
