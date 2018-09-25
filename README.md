@@ -6,7 +6,7 @@ https://w232vfgf.github.io/html-css/3d.html
  [3d转换](https://w232vfgf.github.io/html-css/3d转换.html) 
  https://w232vfgf.github.io/html-css/3d转换.html
 
- [ CSS动画](https://w232vfgf.github.io/html-css/CSS动画.html) 
+ [CSS动画](https://w232vfgf.github.io/html-css/CSS动画.html) 
 https://w232vfgf.github.io/html-css/CSS动画.html
 
  [Hover](https://w232vfgf.github.io/html-css/Hover.html) 
@@ -21,13 +21,13 @@ https://w232vfgf.github.io/html-css/单选和多选.html
  [字体图片](https://w232vfgf.github.io/html-css/字体图片.html) 
  https://w232vfgf.github.io/html-css/字体图片.html
 
-  [幽灵按钮 2D](https://w232vfgf.github.io/html-css/幽灵按钮 2D.html) 
+  [幽灵按钮2D](https://w232vfgf.github.io/html-css/幽灵按钮2D.html) 
 https://w232vfgf.github.io/html-css/幽灵按钮 2D.html
 
-  [幽灵按钮 Background](https://w232vfgf.github.io/html-css/幽灵按钮 Background.html) 
+  [幽灵按钮Background](https://w232vfgf.github.io/html-css/幽灵按钮 Background.html) 
  https://w232vfgf.github.io/html-css/幽灵按钮 Background.html
 
-  [幽灵按钮 Border](https://w232vfgf.github.io/html-css/幽灵按钮 Border.html) 
+  [幽灵按钮Border](https://w232vfgf.github.io/html-css/幽灵按钮Border.html) 
 https://w232vfgf.github.io/html-css/幽灵按钮 Border.html
 
   [开关](https://w232vfgf.github.io/html-css/开关.html) 
@@ -37,7 +37,7 @@ https://w232vfgf.github.io/html-css/开关.html
   [jq标签页](https://w232vfgf.github.io/JQ/jq.html) 
 https://w232vfgf.github.io/JQ/jq.html
 
-  [ jq-放大图片](https://w232vfgf.github.io/JQ/jq放大镜/jq-放大图片.html) 
+  [jq-放大图片](https://w232vfgf.github.io/JQ/jq放大镜/jq-放大图片.html) 
 https://w232vfgf.github.io/JQ/jq放大镜/jq-放大图片.html
 
   [jq按钮](https://w232vfgf.github.io/JQ/jq按钮.html) 
@@ -56,7 +56,7 @@ https://w232vfgf.github.io/JS/dom.html
   [dome01](https://w232vfgf.github.io/JS/dom01.html) 
 https://w232vfgf.github.io/JS/dom01.html
 
-  [ dome02](https://w232vfgf.github.io/JS/dom02.html) 
+  [dome02](https://w232vfgf.github.io/JS/dom02.html) 
 https://w232vfgf.github.io/JS/dom02.html
 
   [dome03](https://w232vfgf.github.io/JS/dom03.html) 
