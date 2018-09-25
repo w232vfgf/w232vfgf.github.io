@@ -42,19 +42,3 @@ body .mb .tab-content a {
   font-size: 25px;
   margin: 5px;
 }
-body .grzl {
-  position: absolute;
-  top: 50%;
-  margin-top: -40px;
-  right: 10px;
-  width: 120px;
-}
-body .grzl .thumbnail {
-  margin: 0;
-  text-align: center;
-  background: rgba(222, 222, 222, 0.5);
-}
-body .grzl .thumbnail a {
-  text-decoration: none;
-  color: #4732a8;
-}
