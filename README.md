@@ -28,7 +28,7 @@ https://w232vfgf.github.io/html-css/幽灵按钮2D.html
  https://w232vfgf.github.io/html-css/幽灵按钮Background.html
 
   [幽灵按钮Border](https://w232vfgf.github.io/html-css/幽灵按钮Border.html) 
-https://w232vfgf.github.io/html-css/幽灵按钮 Border.html
+https://w232vfgf.github.io/html-css/幽灵按钮Border.html
 
   [开关](https://w232vfgf.github.io/html-css/开关.html) 
 https://w232vfgf.github.io/html-css/开关.html
