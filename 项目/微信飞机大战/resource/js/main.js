@@ -287,7 +287,7 @@ var time = 0;
 var star = function() {
     an = setInterval(function() {
         time++;
-        var f = new setCookie("最高分", sco);
+
         if (time % 50 === 0) {
             enemies.createNewEnemy(); //生成飞机
         }
@@ -298,6 +298,7 @@ var star = function() {
         moveNewBullet();
         //进行血量判定，看游戏是否结束
         if (ourPlane.hp <= 0) {
+            setCookie("最高分", sco);
             getCookie(sco);
             gameOver();
         }
