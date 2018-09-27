@@ -179,7 +179,7 @@ Enemy.prototype.moveAllEnemy = function() {
         for (var j = 0; j < ourPlane.segement.length; j++) {
 
             // 如果飞机还未死亡就挡住子弹
-            if (this.segments[i].hp >= 0) {
+            if (this.segments[i].hp > 0) {
                 //水平碰撞
                 var horizontalCollision = Math.abs(this.segments[i].centerX - ourPlane.segement[j].currentX) < (this.segments[i].sizeX / 2 + ourPlane.segement[j].sizeX / 2);
                 //垂直碰撞
@@ -285,6 +285,22 @@ var gameOver = function() {
 
 var time = 0;
 var star = function() {
+    if (!localStorage.sites) {
+        localStorage.sites = JSON.stringify([]);
+        var newItem = {
+            ss
+        }
+        var tmp = JSON.parse(localStorage.getItem('sites'))
+        tmp.push(newItem)
+        localStorage.setItem('sites', JSON.stringify(tmp));
+    };
+    if (!document.cookie) {
+        var tmp = JSON.parse(localStorage.getItem('sites'));
+        var dd = tmp.sort();
+        setCookie("最高分", dd[dd.length - 1].ss);
+    } else {
+        setCookie("最高分", sco);
+    }
     an = setInterval(function() {
         time++;
 
@@ -298,12 +314,30 @@ var star = function() {
         moveNewBullet();
         //进行血量判定，看游戏是否结束
         if (ourPlane.hp <= 0) {
-            setCookie("最高分", sco);
+            fs();
             getCookie(sco);
             gameOver();
         }
     }, 20);
 };
+
+function fs() {
+    var tmp = JSON.parse(localStorage.getItem('sites'))
+    if (localStorage.sites) {
+        var dd = tmp.sort();
+        if (sco > dd[dd.length - 1].ss) {
+            var newItem = {
+                ss: sco
+            }
+            tmp.push(newItem)
+            localStorage.setItem('sites', JSON.stringify(tmp));
+            return ss = sco;
+        } else {
+            return ss = dd[dd.length - 1].ss;
+        }
+
+    }
+}
 
 function setCookie(cname, cvalue) {
     var d = new Date();
