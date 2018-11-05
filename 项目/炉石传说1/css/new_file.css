@@ -1190,7 +1190,7 @@ li {
     vertical-align: middle;
 }
 
-.container .fr .b-t>a {
+.container .fr .lbbt>a {
     width: 7px;
     height: 14px;
     position: absolute;
@@ -1198,13 +1198,13 @@ li {
     background: url(../img/Fesport-icon.gif) no-repeat;
 }
 
-.container .fr .b-t a.sg {
+.container .fr .b-t .lbbt a.sg {
     top: 120px;
     left: 7px;
     background-position: -16px 0;
 }
 
-.container .fr .b-t a.xg {
+.container .fr .b-t .lbbt a.xg {
     top: 120px;
     right: 12px;
     background-position: -8px 0;

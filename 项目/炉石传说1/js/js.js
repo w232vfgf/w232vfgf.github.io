@@ -70,14 +70,14 @@ $('.container .fr .b-t a.xg').click(function() {
     }
     box.style.marginLeft = -249 * z + 'px';
 })
-var timer = setInterval(function() {
+var tt = setInterval(function() {
     $('.container .fr .b-t a.xg').click();
 }, 3000);
-$(".lbt").hover(function() {
+$(".lbbt").hover(function() {
     //鼠标移入
-    clearInterval(timer);
+    clearInterval(tt);
 }, function() {
-    timer = setInterval(function() {
+    tt = setInterval(function() {
         $('.container .fr .b-t a.xg').click();
     }, 3000);
 });
