@@ -1,0 +1,15 @@
+目录文件
+lib 存放连接数据库文件
+models 存放连接数据库的存储模块文件
+public 存放用于静态托管的文件CSS，img，js等
+rotes 存放路由文件
+views 存放网页模板文件
+index.js 创建服务器，写服务器的内容
+
+req.query: 解析后的 url 中的querystring，如?name=haha，req.query 的值为{name: 'haha'}
+req.params: 解析 url 中的占位符，如/:name，访问/haha，req.params 的值为{name: 'haha'}
+req.body: 解析后请求体，需使用相关的模块，如 body-parser，请求体为{"name": "haha"}，则 req.body 为 {name: 'haha'}
+
+app.post('/',function(req,res))获得post请求
+app.all('/',function(req,res))获得所有(包括get和post)请求
+
