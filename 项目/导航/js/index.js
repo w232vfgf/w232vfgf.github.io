@@ -67,7 +67,7 @@ var app3 = new Vue({
     },
     created: function () {
     
-        axios.get('http://api.apiopen.top/musicRankings')
+        axios.get('https://api.apiopen.top/musicRankings')
             .then((response) => {
                 // 箭头函数this指向是固定的
                 this.poem = response.data.result;              
