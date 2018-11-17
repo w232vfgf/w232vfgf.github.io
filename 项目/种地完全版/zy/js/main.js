@@ -24,27 +24,27 @@ document.body.onpageshow = function() {
     grids.addClass("sxzy");
 }
 document.body.onscroll = function() {
-    if (window.pageYOffset < con.offset().top - window.innerHeight + con.height()) {
+    if (window.pageYOffset < con.offset().top - window.innerHeight ) {
 
         go.fadeOut();
     }
-    if (window.pageYOffset > con.offset().top - window.innerHeight + con.height()) {
+    if (window.pageYOffset > con.offset().top - window.innerHeight ) {
         con.addClass("sxzy");
         go.fadeIn();
     }
-    if (window.pageYOffset > service.offset().top - window.innerHeight + service.height()) {
+    if (window.pageYOffset > service.offset().top - window.innerHeight ) {
         service.addClass("sxzy");
     }
     if (window.pageYOffset > Works.offset().top - window.innerHeight) {
         Works.addClass("fdsx");
     }
-    if (window.pageYOffset > news.offset().top - window.innerHeight + news.height() / 2) {
+    if (window.pageYOffset > news.offset().top - window.innerHeight ) {
         news.addClass("sxzy");
     }
-    if (window.pageYOffset > section.offset().top - window.innerHeight + section.height() / 2) {
+    if (window.pageYOffset > section.offset().top - window.innerHeight ) {
         section.addClass("sxzy");
     }
-    if (window.pageYOffset > footer.offset().top - window.innerHeight + footer.height()) {
+    if (window.pageYOffset > footer.offset().top - window.innerHeight ) {
         footer.addClass("sxzy");
     }
 }
