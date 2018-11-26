@@ -1,0 +1,239 @@
+body{
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 540px;
+    background: #fff;
+}
+.container-fluid{
+    padding: 0;
+}
+.container-fluid .glyphicon-chevron-left{
+   height: 34px;
+   width: 39px;
+text-align: center;
+line-height: 34px;  
+cursor: pointer;
+}
+.search{
+    position: relative;
+    height: 34px;
+    display: block;
+    margin: 8px 0;
+}
+.input-group{
+    width: 85%;
+    border-radius: 15px;
+    height: 30px;
+    overflow: hidden;
+    background: #f7f7f7;
+    padding-left: 6px;
+    padding-right: 20px;
+}
+.container-fluid .glyphicon-option-horizontal{
+    height: 34px;
+    width: 39px;
+    display: block;
+ text-align: center;
+ line-height: 34px;  
+cursor: pointer;
+overflow: hidden;
+position: absolute;
+top: 0;
+right: 0;
+ }
+ .input-group  #basic-addon1{
+    background:none; 
+     border: none; 
+    border-radius: 0;
+ }
+ .input-group .form-control{
+    border: 0;
+    background: 0 0;
+    font-size: 16px;
+    color: #232326;
+    padding-left: 5px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    box-shadow:none;
+ }
+ .input-group .form-control:focus{
+    box-shadow:none;
+ }
+ .nav .barTabs{
+    height: 40px;
+
+ }
+ .nav .barTabs::before{
+    content: "";
+    background-color: #e5e5e5;
+    height: 1px;
+    display: block;
+ }
+ .nav .barTabs::after{
+    content: "";
+    background-color: #e5e5e5;
+    height: 1px;
+    display: block;
+ }
+ .nav .barTabs .item{
+     display: inline-block;
+     width: 26%;
+     height: 40px;
+     text-align: center;
+     line-height: 40px; 
+     font-size: 15px;
+ } 
+ .nav .barTabs .item:last-of-type{
+    width: 16%;
+    position: relative;
+} 
+.nav .barTabs .item.has{
+    color: #e93b3d;
+}
+
+.nav .barTabs .item>i::before{
+   font-size: 1px;
+   margin-left: 5px;
+   vertical-align: middle;
+}
+.nav .barTabs .item:last-of-type::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    background-color: #e5e5e5;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+} 
+.barTabMore>ul{
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 5px 10px 15px;
+    height: 45px;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+.barTabMore>ul>li{
+    float: left;
+    width: 25%;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.barTabMore>ul>li>span{
+    display: block;
+    position: relative;
+    padding: 0 5px;
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    background-color: #f2f2f7;
+    border-radius: 2px;
+}
+.barTabMore>ul>li>span>i{
+    font-size: 1px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.barTabMore>ul>li>span.hd img{
+    height: 14px;
+}
+.barTabMore:after{
+    content: "";
+    background-color: #e5e5e5;
+    height: 1px;
+    display: block;
+ }
+
+
+
+img {
+    width: 100%;
+}
+.productList{
+    background: #e5e5e5;
+    overflow: hidden;
+
+}
+.productList.grid .item {
+    padding-top: 15px;
+    max-width: 49.4%;
+    margin-bottom: 5px;
+    float: left;
+    background: #fff;
+    height: 390px;
+}
+.productList.grid .item:nth-child(odd){
+    margin-right: 6.5px;
+}
+.productList.list .item {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background: #fff;
+}
+.productList.list .item::after{
+    content: "";
+    background-color: #ccc;
+    height: 1px;
+    position: relative;
+    left: 130px;
+    display: block;
+}
+.productList.list .item:nth-child(1)::after{
+    display: none;
+}
+.productList.list .item img {
+    width: 25%;
+    float: left;
+}
+
+.productList .item .desc {
+    float: left;
+}
+
+.productList.list .item .desc {
+    width: 75%;
+}
+
+.productList .item h5 i {
+    width: 34px;
+    height: 14px;
+    background: url('https://img11.360buyimg.com/jdphoto/s68x28_jfs/t24730/322/2165679440/954/fe3afa05/5bc45b9aNb1315ac0.png');
+    background-size: 100%;
+    display: inline-block;
+}
+
+.productList .item .price {
+    color: red;
+}
+
+.productList .item .price::before {
+    content: '￥';
+}
+
+.model {
+    position: fixed;
+    top: 80%;
+    right: 5px;
+}
+.model span{
+    background: hsla(0,0%,100%,.9) no-repeat 50%;
+    border-radius: 17px;
+    height: 32px;
+    width: 32px;
+    display: block;
+    border: 1px solid #ccc;
+    background-size: 20px;
+}
+.model span>img{
+    width:24px;
+   margin-left:3px ;
+   margin-top: 3px;
+}
