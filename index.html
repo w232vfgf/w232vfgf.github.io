@@ -1,53 +1,18 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
-<!-- [if (gte IE 9)|!(IE)]><! -->
+
 <html lang="zh-CN">
-  <!-- <![endif] -->
+
 
   <head>
-    <!--
-      Basic Page Needs
-      ==================================================
-    -->
+
     <title>Home</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <!--
-      Mobile Specific Metas
-      ==================================================
-    -->
     <meta content="width=device-width,initial-scale=1" name="viewport" />
 
-    <!--
-      Favicons
-      ==================================================
-    -->
-    <link rel="shortcut icon" href="./blog/images/favicon.png" />
-    <link rel="apple-touch-icon" href="./blog/images/apple-touch-icon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./blog/images/apple-touch-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./blog/images/apple-touch-icon-114x114.png"
-    />
-
-    <!--
-      fonts
-      ====================================================
-    -->
-    <!--
-      stylesheets
-      ====================================================
-    -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -64,17 +29,10 @@
       type="text/css"
       href="./blog/css/simpletextrotator.css"
     />
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <script src="./blog/js/jquery.min.js"></script>
-    <!-- JQUERY -->
   </head>
 
   <body>
-    <!-- FRONT PAGE/ SPLASH SCREEN SECTION -->
-
     <div class="loading-screen"></div>
 
     <div id="frontpage">
@@ -84,45 +42,27 @@
         class="front-img img-responsive"
         alt="Front-image"
       />
-      <!-- IMAGE FOR FRONT SCREEN -->
       <h1>欢迎 <span class="invert">到访</span></h1>
-      <!-- PROFILE NAME -->
-      <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">
-        我的 <span class="rotate">博客, 个人网站</span>
-      </h3>
-      <!-- SUBTITLE IN PROFILE -->
       <div class="frontclick">
         <img src="./blog/images/click.png" alt="" class="img-responsive" /><span
           class="pulse"
         ></span>
       </div>
     </div>
-    <!-- FRONT PAGE/ SPLASH SCREEN SECTION ENDS -->
-    <!-- container -->
     <div class="container">
       <div id="content" class="row hidden">
         <div class="col-sm-4">
-          <!-- namecard -->
           <div id="namecard" class="namecard">
             <div class="shadow-img"></div>
             <h1 class="maintitle">欢迎 <span class="invert">到访</span></h1>
-            <!-- PROFILE NAME -->
-            <h3 class="invert sub-maintitle">
-              我的 <span class="rotate">博客, 个人网站</span>
-              <!-- SUBTITLE AFTET NAME -->
-            </h3>
             <img
               id="profile-img"
               class="profile-img transparent"
               src="./blog/images/profile-thum.png"
               alt="profile-image"
             />
-            <!-- PROFILE IMAGE -->
           </div>
-          <!-- /#namecard -->
-          <!-- menu -->
           <div id="menu-container">
-            <!-- PAGE MENU -->
             <ul class="nav-menu no-padding">
               <li class="nav-btn selected" title="首页" data-page="home">
                 <div class="hover-background"></div>
@@ -156,38 +96,18 @@
                 <span>联系我</span><i class="fa fa-paper-plane fa-fw"></i>
               </li>
             </ul>
-            <!-- /.nav-menu __PAGE MENU ENDS -->
-
-            <!-- SOCIAL NAV MENU -->
           </div>
-          <!-- #menu-container -->
         </div>
         <div class="col-sm-8 page-segment">
           <ul class="page-container no-padding">
-            <!-- HOME/PROFILE PAGE -->
             <li id="home" class="selected">
               <div class="title-container hidden">
-                <div class="shadow-img"></div>
-                <h2 class="rotate-out">博<span class="invert">客</span></h2>
-                <!-- HOME TITLE -->
+                <div class="shadow-img">
+                </div>
+                  <h2 class="rotate-out">个人简历</h2>    
               </div>
               <div class="description hidden">
-                <div class="watermark-home"></div>
-
-                <div class="fade-text transparent">
-                  <!-- DESCRIPTION ON HOME -->
-                  <div class="strong-text">Hello, I am <span>Lin</span></div>
-                  <div class="focus-text">
-                    <span>我是一枚Web前端开发的菜鸟</span>
-                  </div>
-                  <p class="large-paragraph">
-                    这里记录了我学习过程敲过项目和笔记
-                  </p>
-                  <!-- DESCRIPTION ON HOME ENDS -->
-                </div>
-
-                <!-- ALL PERSONAL DETAILS -->
-                <h3 class="personal-info-title title">我学习过的知识</h3>
+                <h3 class="personal-info-title title">我掌握的技能</h3>
                 <ul class="personal-info">
                   <li class="rotate-out rotated">
                     <label>HTML5</label><span>CSS3</span>
@@ -202,23 +122,20 @@
                     <label>vue</label><span>svg、canvas 等</span>
                   </li>
                 </ul>
-                <!-- /ul.personal-info -->
               </div>
             </li>
-            <!-- /#home -->
 
-            <!-- RESUME PAGE -->
             <li id="resume" class="hidden">
               <div class="title-container">
                 <div class="shadow-img"></div>
                 <h2 class="rotate-out rotated">
                   <span class="invert">项目代码 </span> 学习笔记
                 </h2>
-                <!-- RESUME TITLE -->
+
               </div>
               <div class="description">
                 <div class="tabs tabs_animate">
-                  <!-- RESUME TAB LISTS -->
+ 
                   <ul class="horizontal no-padding">
                     <li>
                       <a href="#tab-1" class="icon-bg icon-skills">
@@ -236,13 +153,10 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- RESUME TAB LISTS ENDS -->
-
-                  <!-- RESUME FIRST TAB/SKILL TAB DETAILS -->
                   <div id="tab-1">
                     <ul class="education-class">
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+
                         <h4 class="title">
                           HTML5&CSS3<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -310,7 +224,6 @@
                         </div>
                       </li>
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
                         <h4 class="title">
                           jQuery<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -336,7 +249,7 @@
                         </div>
                       </li>
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+  
                         <h4 class="title">
                           javaScript<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -392,7 +305,7 @@
                         </div>
                       </li>
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+        
                         <h4 class="title">
                           SVG<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -413,13 +326,11 @@
                       </li>
                     </ul>
                   </div>
-                  <!-- RESUME FIRST TAB/SKILL TAB DETAILS ENDS -->
 
-                  <!-- RESUME SECOND TAB/EDUCATION TAB DETAILS -->
                   <div id="tab-2">
                     <ul class="education-class">
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+          
                         <h4 class="title">
                           小项目<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -445,7 +356,7 @@
                         </div>
                       </li>
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+          
                         <h4 class="title">
                           H5游戏<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -461,7 +372,7 @@
                       </li>
 
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+
                         <h4 class="title">
                           网站模仿还原<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -482,7 +393,7 @@
                       </li>
 
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+
                         <h4 class="title">
                           前后端数据库结合<i
                             class="fa fa-sort-desc pull-right"
@@ -498,7 +409,7 @@
                         </div>
                       </li>
                       <li>
-                        <!-- EDUCATION LIST ITEM -->
+
                         <h4 class="title">
                           Vue.js项目<i class="fa fa-sort-desc pull-right"></i>
                         </h4>
@@ -509,35 +420,28 @@
                           >
                             热门导航
                           </a>
-                        </div>
-                        <div class="list-content">
                           <a
-                            href="https://w232vfgf.github.io/项目/京东-购物页/main.html"
-                            target="_blank"
-                          >
-                          京东-购物页
-                          </a>
+                          href="https://w232vfgf.github.io/项目/京东-购物页/main.html"
+                          target="_blank"
+                        >
+                        京东-购物页
+                        </a>
                         </div>
                       </li>
                     </ul>
                   </div>
-                  <!-- RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS -->
-                  <!-- RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS -->
                   <div id="tab-3"><h3 class="title">还未添加</h3></div>
-                  <!-- RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS -->
                 </div>
               </div>
             </li>
-            <!-- /#resume -->
-            <!-- PORTFOLIO PAGE -->
             <li id="portfolio" class="hidden">
               <div class="title-container">
                 <div class="shadow-img"></div>
                 <h2 class="rotate-out rotated">收藏</h2>
-                <!-- PORTFOLIO TITLE -->
+
               </div>
 
-              <!-- PORTFOLIO CATEGORY LIST -->
+
               <div class="abs-child">
                 <ul class="button-group filters-button-group">
                   <li class="button is-checked" data-filter="*">全部</li>
@@ -545,25 +449,20 @@
                   <li class="button" data-filter=".commercial">API</li>
                   <li class="button" data-filter=".potrait">图片</li>
                 </ul>
-                <!-- /.button-group filters-button-group -->
               </div>
 
               <div class="sec-porfolio description">
                 <div class="row">
-                  <!-- PORTFOLIO ITEM CONTAINER -->
                   <div class="folio-container"><h1>还未添加</h1></div>
-                  <!-- PORTFOLIO ITEM CONTAINER ENDS -->
+
                 </div>
               </div>
             </li>
-            <!-- /#portfolio -->
 
-            <!-- CONTACT PAGE -->
             <li id="contact" class="hidden">
               <div class="title-container">
                 <div class="shadow-img"></div>
                 <h2 class="rotate-out rotated">联系我</h2>
-                <!-- CONTACT PAGE TITLE -->
               </div>
               <div class="description">
                 <div class="row">
@@ -580,7 +479,6 @@
                   </div>
 
                   <div class="col-sm-5">
-                    <!-- CONTACT DESCRIPTION -->
                     <h3 class="title">联系方式</h3>
                     <h6 class="sm-title">QQ：1057578625</h6>
                     <h6 class="sm-title">
@@ -588,45 +486,29 @@
                         ><i class="fa fa-envelope"></i></span
                       >105757825@qq.com
                     </h6>
-                    <!-- /CONTACT DESCRIPTION ENDS -->
                   </div>
                 </div>
               </div>
             </li>
-            <!-- /#contact -->
           </ul>
         </div>
-        <!-- /.page-segment -->
-        <!-- <h6 class="copyright-text">Copyright © 2015 John Doe</h6> -->
-        <!-- if anyone wants copyright Texts -->
       </div>
     </div>
-    <!-- /.container -->
-    <!-- PORTFOLIO IMAGE MODAL LIST -->
 
-    <!--
-      javascript files
-      =============================================================
-    -->
     <script
       type="text/javascript"
       src="./blog/js/jQueryTween-aio-min.js"
     ></script>
-    <!-- JQUERY Tween Plugin -->
     <script
       type="text/javascript"
       src="./blog/js/jquery.tabslet.min.js"
     ></script>
-    <!-- JQUERY Tab plugin -->
     <script type="text/javascript" src="./blog/js/progressbar.min.js"></script>
-    <!-- JQUERY Progressbar Plugin -->
     <script
       type="text/javascript"
       src="./blog/js/jquery.simple-text-rotator.min.js"
     ></script>
-    <!-- JQUERY Text Rotator -->
     <script type="text/javascript" src="./blog/js/bootstrap.min.js"></script>
-    <!-- Bootstrap file -->
     <script type="text/javascript" src="./blog/js/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="./blog/js/custom.js"></script>
   </body>
