@@ -3,513 +3,352 @@
 <html lang="zh-CN">
 
 
-  <head>
+<head>
 
-    <title>Home</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+  <title>Home</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./blog/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./blog/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="./blog/css/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./blog/css/simpletextrotator.css"
-    />
-    <script src="./blog/js/jquery.min.js"></script>
-  </head>
+  <link rel="stylesheet" type="text/css" href="./blog/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./blog/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./blog/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./blog/css/simpletextrotator.css" />
+  <script src="./blog/js/jquery.min.js"></script>
+</head>
 
-  <body>
-    <div class="loading-screen"></div>
+<body>
+  <div class="loading-screen"></div>
 
-    <div id="frontpage">
-      <div class="shadow-img"></div>
-      <img
-        src="./blog/images/front-image.jpg"
-        class="front-img img-responsive"
-        alt="Front-image"
-      />
-      <h1>欢迎 <span class="invert">到访</span></h1>
-      <div class="frontclick">
-        <img src="./blog/images/click.png" alt="" class="img-responsive" /><span
-          class="pulse"
-        ></span>
-      </div>
+  <div id="frontpage">
+    <div class="shadow-img"></div>
+    <img src="./blog/images/front-image.jpg" class="front-img img-responsive" alt="Front-image" />
+    <h1>欢迎 <span class="invert">到访</span></h1>
+    <div class="frontclick">
+      <img src="./blog/images/click.png" alt="" class="img-responsive" /><span class="pulse"></span>
     </div>
-    <div class="container">
-      <div id="content" class="row hidden">
-        <div class="col-sm-4">
-          <div id="namecard" class="namecard">
-            <div class="shadow-img"></div>
-            <h1 class="maintitle">欢迎 <span class="invert">到访</span></h1>
-            <img
-              id="profile-img"
-              class="profile-img transparent"
-              src="./blog/images/profile-thum.png"
-              alt="profile-image"
-            />
-          </div>
-          <div id="menu-container">
-            <ul class="nav-menu no-padding">
-              <li class="nav-btn selected" title="首页" data-page="home">
-                <div class="hover-background"></div>
-                <span>首页</span><i class="fa fa-user fa-fw"></i>
-              </li>
-              <li
-                class="nav-btn"
-                id="resume-btn"
-                title="学习记录"
-                data-page="resume"
-              >
-                <div class="hover-background"></div>
-                <span>学习记录</span><i class="fa fa-file-text fa-fw"></i>
-              </li>
-              <li
-                class="nav-btn folio-btn"
-                data-filter="*"
-                title="收藏"
-                data-page="portfolio"
-              >
-                <div class="hover-background"></div>
-                <span>收藏</span><i class="fa fa-suitcase fa-fw"></i>
-              </li>
-              <li
-                class="nav-btn"
-                title="联系我"
-                id="contact-link"
-                data-page="contact"
-              >
-                <div class="hover-background"></div>
-                <span>联系我</span><i class="fa fa-paper-plane fa-fw"></i>
-              </li>
-            </ul>
-          </div>
+  </div>
+  <div class="container">
+    <div id="content" class="row hidden">
+      <div class="col-sm-4">
+        <div id="namecard" class="namecard">
+          <div class="shadow-img"></div>
+          <h1 class="maintitle">欢迎 <span class="invert">到访</span></h1>
+          <img id="profile-img" class="profile-img transparent" src="./blog/images/profile-thum.png" alt="profile-image" />
         </div>
-        <div class="col-sm-8 page-segment">
-          <ul class="page-container no-padding">
-            <li id="home" class="selected">
-              <div class="title-container hidden">
-                <div class="shadow-img">
-                </div>
-                  <h2 class="rotate-out">个人简历</h2>    
-              </div>
-              <div class="description hidden">
-                <h3 class="personal-info-title title">我掌握的技能</h3>
-                <ul class="personal-info">
-                  <li class="rotate-out rotated">
-                    <label>HTML5</label><span>CSS3</span>
-                  </li>
-                  <li class="rotate-out rotated">
-                    <label>Node.js</label><span>MongoDB</span>
-                  </li>
-                  <li class="rotate-out rotated">
-                    <label>jQuery</label><span>javaScript</span>
-                  </li>
-                  <li class="rotate-out rotated">
-                    <label>vue</label><span>svg、canvas 等</span>
-                  </li>
-                </ul>
-              </div>
+        <div id="menu-container">
+          <ul class="nav-menu no-padding">
+            <li class="nav-btn selected" title="首页" data-page="home">
+              <div class="hover-background"></div>
+              <span>首页</span><i class="fa fa-user fa-fw"></i>
             </li>
-
-            <li id="resume" class="hidden">
-              <div class="title-container">
-                <div class="shadow-img"></div>
-                <h2 class="rotate-out rotated">
-                  <span class="invert">项目代码 </span> 学习笔记
-                </h2>
-
-              </div>
-              <div class="description">
-                <div class="tabs tabs_animate">
- 
-                  <ul class="horizontal no-padding">
-                    <li>
-                      <a href="#tab-1" class="icon-bg icon-skills">
-                        <div>练习</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#tab-2" class="icon-bg icon-education">
-                        <div>项目</div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#tab-3" class="icon-bg icon-employment">
-                        <div>笔记</div>
-                      </a>
-                    </li>
-                  </ul>
-                  <div id="tab-1">
-                    <ul class="education-class">
-                      <li>
-
-                        <h4 class="title">
-                          HTML5&CSS3<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/html-css/幽灵按钮 2D.html"
-                            target="_blank"
-                            >幽灵按钮2d &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/幽灵按钮 2D.html"
-                            target="_blank"
-                            >幽灵按钮2d&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/html-css/幽灵按钮 Border.html"
-                            target="_blank"
-                            >幽灵按钮Border &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/开关.html"
-                            target="_blank"
-                            >开关 &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/3d.html"
-                            target="_blank"
-                            >3d &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/3d转换.html"
-                            target="_blank"
-                            >3d转换 &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/CSS动画.html"
-                            target="_blank"
-                            >CSS动画 &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/Hover.html"
-                            target="_blank"
-                            >Hover &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/border-径向渐变.html"
-                            target="_blank"
-                            >border-径向渐变 &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/map.html"
-                            target="_blank"
-                            >map &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/单选和多选.html"
-                            target="_blank"
-                            >单选和多选 &nbsp;</a
-                          >
-                          <a
-                            href="https://w232vfgf.github.io/html-css/字体图片.html"
-                            target="_blank"
-                            >字体图片 &nbsp;</a
-                          >
-                        </div>
-                      </li>
-                      <li>
-                        <h4 class="title">
-                          jQuery<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content current">
-                          <a
-                            href="https://w232vfgf.github.io/JQ/jq.html"
-                            target="_blank"
-                          >
-                            jq标签页&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JQ/jq放大镜/jq-放大图片.html"
-                            target="_blank"
-                          >
-                            jq-放大图片&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JQ/jq按钮.html"
-                            target="_blank"
-                          >
-                            jq按钮
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-  
-                        <h4 class="title">
-                          javaScript<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/JS/3d柱形.html"
-                            target="_blank"
-                          >
-                            3d柱形&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/car.html"
-                            target="_blank"
-                          >
-                            car&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/dom.html"
-                            target="_blank"
-                          >
-                            dome&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/dom01.html"
-                            target="_blank"
-                          >
-                            dome01&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/dom02.html"
-                            target="_blank"
-                          >
-                            dome02&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/dom03.html"
-                            target="_blank"
-                          >
-                            dome03&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/js.html"
-                            target="_blank"
-                          >
-                            js标签页&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/JS/闭包.html"
-                            target="_blank"
-                          >
-                            闭包-计数器&nbsp;
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-        
-                        <h4 class="title">
-                          SVG<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/SVG/svg-1.html"
-                            target="_blank"
-                          >
-                            svg-1&nbsp;
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/SVG/svg.html"
-                            target="_blank"
-                          >
-                            svg&nbsp;
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div id="tab-2">
-                    <ul class="education-class">
-                      <li>
-          
-                        <h4 class="title">
-                          小项目<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/项目/3d播放器/index.html"
-                            target="_blank"
-                          >
-                            3d播放器
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/项目/抽奖/index.html"
-                            target="_blank"
-                          >
-                            抽奖
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/项目/轮播图/lbt04.html"
-                            target="_blank"
-                          >
-                            轮播图
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-          
-                        <h4 class="title">
-                          H5游戏<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content current">
-                          <a
-                            href="https://w232vfgf.github.io/项目/微信飞机大战/index.html"
-                            target="_blank"
-                          >
-                            微信飞机大战
-                          </a>
-                          <p></p>
-                        </div>
-                      </li>
-
-                      <li>
-
-                        <h4 class="title">
-                          网站模仿还原<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/项目/炉石传说1/index.html"
-                            target="_blank"
-                          >
-                            炉石传说
-                          </a>
-                          <a
-                            href="https://w232vfgf.github.io/项目/种地完全版/main.html"
-                            target="_blank"
-                          >
-                            仿国外网站
-                          </a>
-                        </div>
-                      </li>
-
-                      <li>
-
-                        <h4 class="title">
-                          前后端数据库结合<i
-                            class="fa fa-sort-desc pull-right"
-                          ></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/项目/博客/index.html"
-                            target="_blank"
-                          >
-                            博客
-                          </a>
-                        </div>
-                      </li>
-                      <li>
-
-                        <h4 class="title">
-                          Vue.js项目<i class="fa fa-sort-desc pull-right"></i>
-                        </h4>
-                        <div class="list-content">
-                          <a
-                            href="https://w232vfgf.github.io/项目/导航/index.html"
-                            target="_blank"
-                          >
-                            热门导航
-                          </a>
-                          <a
-                          href="https://w232vfgf.github.io/项目/京东-购物页/main.html"
-                          target="_blank"
-                        >
-                        京东-购物页
-                        </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div id="tab-3"><h3 class="title">还未添加</h3></div>
-                </div>
-              </div>
+            <li class="nav-btn" id="resume-btn" title="学习记录" data-page="resume">
+              <div class="hover-background"></div>
+              <span>学习记录</span><i class="fa fa-file-text fa-fw"></i>
             </li>
-            <li id="portfolio" class="hidden">
-              <div class="title-container">
-                <div class="shadow-img"></div>
-                <h2 class="rotate-out rotated">收藏</h2>
-
-              </div>
-
-
-              <div class="abs-child">
-                <ul class="button-group filters-button-group">
-                  <li class="button is-checked" data-filter="*">全部</li>
-                  <li class="button" data-filter=".photography">学习网站</li>
-                  <li class="button" data-filter=".commercial">API</li>
-                  <li class="button" data-filter=".potrait">图片</li>
-                </ul>
-              </div>
-
-              <div class="sec-porfolio description">
-                <div class="row">
-                  <div class="folio-container"><h1>还未添加</h1></div>
-
-                </div>
-              </div>
+            <li class="nav-btn folio-btn" data-filter="*" title="收藏" data-page="portfolio">
+              <div class="hover-background"></div>
+              <span>收藏</span><i class="fa fa-suitcase fa-fw"></i>
             </li>
-
-            <li id="contact" class="hidden">
-              <div class="title-container">
-                <div class="shadow-img"></div>
-                <h2 class="rotate-out rotated">联系我</h2>
-              </div>
-              <div class="description">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="map-container">
-                      <div id="map" style="width:100%;height:325px;">
-                        <img
-                          src="./blog//images/11.jpg"
-                          alt=""
-                          style="width:100%;height:325px;"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-5">
-                    <h3 class="title">联系方式</h3>
-                    <h6 class="sm-title">QQ：1057578625</h6>
-                    <h6 class="sm-title">
-                      <span class="address-icon"
-                        ><i class="fa fa-envelope"></i></span
-                      >105757825@qq.com
-                    </h6>
-                  </div>
-                </div>
-              </div>
+            <li class="nav-btn" title="联系我" id="contact-link" data-page="contact">
+              <div class="hover-background"></div>
+              <span>联系我</span><i class="fa fa-paper-plane fa-fw"></i>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+      <div class="col-sm-8 page-segment">
+        <ul class="page-container no-padding">
+          <li id="home" class="selected">
+            <div class="title-container hidden">
+              <div class="shadow-img">
+              </div>
+              <h2 class="rotate-out">个人简历</h2>
+            </div>
+            <div class="description hidden">
+              <h3 class="personal-info-title title">我掌握的技能</h3>
+              <ul class="personal-info">
+                <li class="rotate-out rotated">
+                  <label>HTML5</label><span>CSS3</span>
+                </li>
+                <li class="rotate-out rotated">
+                  <label>Node.js</label><span>MongoDB</span>
+                </li>
+                <li class="rotate-out rotated">
+                  <label>jQuery</label><span>javaScript</span>
+                </li>
+                <li class="rotate-out rotated">
+                  <label>vue</label><span>svg、canvas 等</span>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-    <script
-      type="text/javascript"
-      src="./blog/js/jQueryTween-aio-min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./blog/js/jquery.tabslet.min.js"
-    ></script>
-    <script type="text/javascript" src="./blog/js/progressbar.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./blog/js/jquery.simple-text-rotator.min.js"
-    ></script>
-    <script type="text/javascript" src="./blog/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./blog/js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="./blog/js/custom.js"></script>
-  </body>
+          <li id="resume" class="hidden">
+            <div class="title-container">
+              <div class="shadow-img"></div>
+              <h2 class="rotate-out rotated">
+                <span class="invert">项目代码 </span> 学习笔记
+              </h2>
+
+            </div>
+            <div class="description">
+              <div class="tabs tabs_animate">
+
+                <ul class="horizontal no-padding">
+                  <li>
+                    <a href="#tab-1" class="icon-bg icon-skills">
+                      <div>练习</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab-2" class="icon-bg icon-education">
+                      <div>项目</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab-3" class="icon-bg icon-employment">
+                      <div>笔记</div>
+                    </a>
+                  </li>
+                </ul>
+                <div id="tab-1">
+                  <ul class="education-class">
+                    <li>
+
+                      <h4 class="title">
+                        HTML5&CSS3<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/html-css/幽灵按钮 2D.html" target="_blank">幽灵按钮2d &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/幽灵按钮 2D.html" target="_blank">幽灵按钮2d&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/html-css/幽灵按钮 Border.html" target="_blank">幽灵按钮Border
+                          &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/开关.html" target="_blank">开关 &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/3d.html" target="_blank">3d &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/3d转换.html" target="_blank">3d转换 &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/CSS动画.html" target="_blank">CSS动画 &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/Hover.html" target="_blank">Hover &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/border-径向渐变.html" target="_blank">border-径向渐变
+                          &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/map.html" target="_blank">map &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/单选和多选.html" target="_blank">单选和多选 &nbsp;</a>
+                        <a href="https://w232vfgf.github.io/html-css/字体图片.html" target="_blank">字体图片 &nbsp;</a>
+                      </div>
+                    </li>
+                    <li>
+                      <h4 class="title">
+                        jQuery<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content current">
+                        <a href="https://w232vfgf.github.io/JQ/jq.html" target="_blank">
+                          jq标签页&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JQ/jq放大镜/jq-放大图片.html" target="_blank">
+                          jq-放大图片&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JQ/jq按钮.html" target="_blank">
+                          jq按钮
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+
+                      <h4 class="title">
+                        javaScript<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/JS/3d柱形.html" target="_blank">
+                          3d柱形&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/car.html" target="_blank">
+                          car&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/dom.html" target="_blank">
+                          dome&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/dom01.html" target="_blank">
+                          dome01&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/dom02.html" target="_blank">
+                          dome02&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/dom03.html" target="_blank">
+                          dome03&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/js.html" target="_blank">
+                          js标签页&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/JS/闭包.html" target="_blank">
+                          闭包-计数器&nbsp;
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+
+                      <h4 class="title">
+                        SVG<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/SVG/svg-1.html" target="_blank">
+                          svg-1&nbsp;
+                        </a>
+                        <a href="https://w232vfgf.github.io/SVG/svg.html" target="_blank">
+                          svg&nbsp;
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="tab-2">
+                  <ul class="education-class">
+                    <li>
+
+                      <h4 class="title">
+                        小项目<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/项目/3d播放器/index.html" target="_blank">
+                          3d播放器
+                        </a>
+                        <a href="https://w232vfgf.github.io/项目/抽奖/index.html" target="_blank">
+                          抽奖
+                        </a>
+                        <a href="https://w232vfgf.github.io/项目/轮播图/lbt04.html" target="_blank">
+                          轮播图
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+
+                      <h4 class="title">
+                        H5游戏<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content current">
+                        <a href="https://w232vfgf.github.io/项目/微信飞机大战/index.html" target="_blank">
+                          微信飞机大战
+                        </a>
+                        <p></p>
+                      </div>
+                    </li>
+
+                    <li>
+
+                      <h4 class="title">
+                        网站模仿还原<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/项目/炉石传说1/index.html" target="_blank">
+                          炉石传说
+                        </a>
+                        <a href="https://w232vfgf.github.io/项目/种地完全版/main.html" target="_blank">
+                          仿国外网站
+                        </a>
+                      </div>
+                    </li>
+
+                    <li>
+
+                      <h4 class="title">
+                        前后端数据库结合<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/项目/博客/index.html" target="_blank">
+                          博客
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+
+                      <h4 class="title">
+                        Vue.js项目<i class="fa fa-sort-desc pull-right"></i>
+                      </h4>
+                      <div class="list-content">
+                        <a href="https://w232vfgf.github.io/项目/导航/index.html" target="_blank">
+                          热门导航
+                        </a>
+                        <a href="https://w232vfgf.github.io/项目/京东-购物页/main.html" target="_blank">
+                          京东-购物页
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div id="tab-3">
+                  <h3 class="title">还未添加</h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="portfolio" class="hidden">
+            <div class="title-container">
+              <div class="shadow-img"></div>
+              <h2 class="rotate-out rotated">收藏</h2>
+
+            </div>
+
+
+            <div class="abs-child">
+              <ul class="button-group filters-button-group">
+                <li class="button is-checked" data-filter="*">全部</li>
+                <li class="button" data-filter=".photography">学习网站</li>
+                <li class="button" data-filter=".commercial">API</li>
+                <li class="button" data-filter=".potrait">图片</li>
+              </ul>
+            </div>
+
+            <div class="sec-porfolio description">
+              <div class="row">
+                <div class="folio-container">
+                  <h1>还未添加</h1>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li id="contact" class="hidden">
+            <div class="title-container">
+              <div class="shadow-img"></div>
+              <h2 class="rotate-out rotated">联系我</h2>
+            </div>
+            <div class="description">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="map-container">
+                    <div id="map" style="width:100%;height:325px;">
+                      <img src="./blog//images/11.jpg" alt="" style="width:100%;height:325px;" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-5">
+                  <h3 class="title">联系方式</h3>
+                  <h6 class="sm-title">QQ：1057578625</h6>
+                  <h6 class="sm-title">
+                    <span class="address-icon"><i class="fa fa-envelope"></i></span>105757825@qq.com
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./blog/js/jQueryTween-aio-min.js"></script>
+  <script type="text/javascript" src="./blog/js/jquery.tabslet.min.js"></script>
+  <script type="text/javascript" src="./blog/js/progressbar.min.js"></script>
+  <script type="text/javascript" src="./blog/js/jquery.simple-text-rotator.min.js"></script>
+  <script type="text/javascript" src="./blog/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./blog/js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="./blog/js/custom.js"></script>
+</body>
+
 </html>
